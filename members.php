@@ -135,7 +135,7 @@ foreach ($membros as $membro) {
             <!-- Coluna Principal -->
             <div class="column-main">
                 <div style="text-align: center; margin-bottom: 30px; padding: 20px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 12px; color: white; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-                    <h1 style="font-size: 2.5em; margin: 0 0 10px 0; font-weight: 700; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">🏆 ACOMPANHAMENTO DE MEMBROS</h1>
+                    <h1 style="font-size: 2.5em; margin: 0 0 10px 0; font-weight: 700; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">🏆 Acompanhar Desafio</h1>
                     <p style="font-size: 1.1em; opacity: 0.9;">Desafio Nofap em andamento</p>
                 </div>
                 
@@ -153,9 +153,9 @@ foreach ($membros as $membro) {
                 
                 <?php if (!$periodo_atualizacao_ativo): ?>
                     <div class="message info">
-                        <h3>Período de Atualização Encerrado</h3>
-                        <p>O período para atualização de status terminou em <?php echo date('d/m/Y', strtotime($config['dt_fim'])); ?>.</p>
-                        <p>Os resultados finais foram congelados.</p>
+                        <h3>ACABOU, O NOFAP ACABOU 🥳</h3>
+                        <p>O NOFAP ACABOU EM <?php echo date('d/m/Y', strtotime($config['dt_fim'])); ?>.</p>
+                        <p>Resultados desta página congelados, acesse a página de resultados finais.</p>
                     </div>
                 <?php endif; ?>
 
@@ -230,7 +230,7 @@ foreach ($membros as $membro) {
                 <div style="display: flex; gap: 20px; margin: 30px 0; flex-wrap: wrap;">
                     <!-- Vencedores -->
                     <div style="flex: 1; min-width: 300px; background-color: #d4edda; padding: 20px; border-radius: 8px;">
-                        <h2 style="color: #155724; margin-bottom: 15px; text-align: center;">🏆 Vencedores (<?php echo count($vencedores); ?>)</h2>
+                        <h2 style="color: #155724; margin-bottom: 15px; text-align: center;">🏆 Invictos até o momento (<?php echo count($vencedores); ?>)</h2>
                         <?php if (empty($vencedores)): ?>
                             <p style="text-align: center; color: #155724;">Nenhum membro vencedor registrado.</p>
                         <?php else: ?>
